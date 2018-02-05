@@ -64,6 +64,53 @@ html, body {
   color: white !important;
   margin-top: 50px;
 }
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  display: -ms-flexbox;
+ -ms-flex-wrap: wrap;
+ -ms-flex-direction: column;
+ -webkit-flex-flow: row wrap;
+ flex-flow: row wrap;
+ display: -webkit-box;
+ display: flex;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2.5,2.5);
+  z-index: 10000;
+  transition: .4s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
 .circle {
   background: linear-gradient(315deg, #1A7DD7 0%, #03275A 100%);
   display: block;
@@ -136,6 +183,13 @@ h3 {
 }
 .m-t-50 {
   margin-top: 50px;
+}
+.m-b-50 {
+  margin-bottom: 50px;
+}
+.m-tb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 li,
 t,
@@ -350,6 +404,15 @@ i.no-stroke {
   }
   .left-on-mobile {
     text-align: left;
+  }
+  .gallery {
+    flex-direction: column;
+    width: 220px;
+  }
+  .gallery > div:hover > img {
+    transform: scale(1.6,1.6);
+    z-index: 10000;
+    transition: .4s transform;
   }
 }
 
