@@ -484,6 +484,9 @@ i.no-stroke {
  display: flex;
  flex-direction: column;
 }
+.footer {
+  height: 510px;
+}
 }
 
 /* Animations */
