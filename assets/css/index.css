@@ -208,6 +208,9 @@ a.head {
 a.color:hover {
   color: #0e5096;
 }
+a.color {
+  color: #0e5096;
+}
 ::selection {
   background: #6E1FFF; /* WebKit/Blink Browsers */
   color: white;
@@ -365,11 +368,11 @@ i.no-stroke {
 }
 .right {
   text-align: right;
-  width:52%;
+  width:47%;
   padding-top: 15px;
 }
 .left{
-  width: 48%;
+  width: 53%;
   padding-top: 15px;
 }
 .wrap {
