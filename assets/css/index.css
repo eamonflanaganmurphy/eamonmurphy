@@ -9,10 +9,10 @@
 @font-face {
   font-family: 'Walsheim';
   font-weight: bold;
-  src: url('../fonts/walsheim/GT-Walsheim-Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/walsheim/GT-Walsheim-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/walsheim/GT-Walsheim-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/walsheim/GT-Walsheim-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/walsheim/GT-Walsheim-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/walsheim/GT-Walsheim-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/walsheim/GT-Walsheim-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/walsheim/GT-Walsheim-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 * {
   box-sizing: border-box;
@@ -64,53 +64,26 @@ html, body {
   color: white !important;
   margin-top: 50px;
 }
-.gallery {
-  width: 640px;
-  margin: 0 auto;
-  padding: 5px;
-  background: #fff;
+.thumbnail {
+  max-width: 200px;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
-  display: -ms-flexbox;
- -ms-flex-wrap: wrap;
- -ms-flex-direction: column;
- -webkit-flex-flow: row wrap;
- flex-flow: row wrap;
- display: -webkit-box;
- display: flex;
+  margin: 7px;
+  transition: 0.15s
 }
 
-.gallery > div {
-  position: relative;
-  float: left;
-  padding: 5px;
+.thumbnail:hover {
+transform: scale(1.05);
+}
+.white-box {
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  box-shadow: 0 1px 5px rgba(0,0,0,.2);
+  padding-top: 11px;
+  padding-bottom: 4px;
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
-.gallery > div > img {
-  display: block;
-  width: 200px;
-  transition: .1s transform;
-  transform: translateZ(0); /* hack */
-}
-
-.gallery > div:hover {
-  z-index: 1;
-}
-
-.gallery > div:hover > img {
-  transform: scale(2.5,2.5);
-  z-index: 10000;
-  transition: .4s transform;
-}
-
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
 .circle {
   background: linear-gradient(315deg, #1A7DD7 0%, #03275A 100%);
   display: block;
@@ -155,9 +128,12 @@ h3 {
   color: black !important;
 }
 h4 {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-family: 'Merriweather', serif;
   font-weight: normal;
+  margin: 0;
 }
+
 .accent{
   color: #0e5096;
 }
@@ -187,6 +163,13 @@ h4 {
 }
 .m-t-50 {
   margin-top: 50px;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
 }
 .m-b-50 {
   margin-bottom: 50px;
@@ -425,20 +408,20 @@ i.no-stroke {
   margin-top: 50px;
 }
 .one {
-  width: 250px;
+  width: 240px;
 }
 .two {
-  width: 375px;
+  width: 365px;
   padding-left: 40px;
-
 }
 .three {
-  width: 270px;
+  width: 290px;
   padding-left: 40px;
 }
 .headshot {
   width: 100%;
 }
+
 /* MOBILE */
 
 @media (max-width: 550px) {
@@ -469,7 +452,7 @@ i.no-stroke {
     max-height: calc(67vw - 23px);
   }
   h4{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .text-on-img {
     top: 110px;
