@@ -68,9 +68,6 @@ html, body {
   max-width: 200px;
   transition: 0.15s
 }
-.thumbnail {
-
-}
 
 .zero {
   height: 0 !important;
@@ -789,4 +786,13 @@ i.no-stroke {
 .fadeInUp {
   -webkit-animation: fadeInUp 1s; /* Safari and Chrome */
   animation: fadeInUp 1s;
+}
+
+.photo-thumbnail:hover {
+  transition: .4s transform;/* add thigns here if you want the photo gallery to do something on hover.*/
+}
+
+.nolink {
+text-decoration: none;
+  color: inherit;
 }
