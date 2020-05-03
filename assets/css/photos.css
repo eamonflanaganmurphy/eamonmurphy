@@ -27,6 +27,54 @@
 }
 
 
+#copyright:target {
+  -webkit-animation: target-fade 2s;
+  -moz-animation: target-fade 2s;
+  -o-animation: target-fade 2s;
+  animation: target-fade 2s;
+}
+
+/**
+ * Keyframe animation definition
+ *
+ * 1. Insert a color of your choice here
+ */
+@-webkit-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@-moz-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@-o-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
 
 
 
