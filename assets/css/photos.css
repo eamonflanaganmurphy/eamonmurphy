@@ -1,3 +1,21 @@
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .grad-text {
   background: linear-gradient(315deg, #1A7DD7 0%, #03275A 100%);
   -webkit-background-clip: text;

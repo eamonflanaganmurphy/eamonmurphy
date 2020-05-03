@@ -66,6 +66,7 @@
 </head>
 
 <body>
+<div id = "page"> <!-- loading screen -->
 
   <!-- Header -->
   <div id="header" class="header">
@@ -119,6 +120,7 @@
 
 </div><!--Main div-->
 
+
   <!-- Footer -->
   <div class="footer" style="position: relative;">
     <div class="content" id="footer-content">
@@ -137,6 +139,17 @@
     </div>
   </div>
 
+</div> <!--footer-->
+
+</div> <!--#page-->
+<div id="loading">
+  <div class="fadeInUp">
+    <div class="circle bob"></div>
+    <div class="shadow breath"></div>
+    <h2>loading...</h2>
+  </div>
+</div>
+
   <!-- Animate On Scroll CDN-->
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
@@ -144,6 +157,9 @@
   duration: 900
   });
   </script>
+
+  <!-- loading-->
+  <script src="../assets/js/loading.js"></script>
 
   <!-- Header Change Color-->
   <script src="../assets/js/header.js"></script>
