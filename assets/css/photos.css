@@ -1,54 +1,22 @@
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 3px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 3px;
-}
-
-.column a img {
-  margin-top: 6px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.grad-text {
+  background: linear-gradient(315deg, #1A7DD7 0%, #03275A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 55px 20px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+
+
+
+/* Mobile */
 @media screen and (max-width: 800px) {
   .photo-gallery {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
   .pano {
    grid-column: auto / span 1;
@@ -64,13 +32,16 @@
       grid-row: auto / span 1;
       grid-column: auto / span 1;
   }
+  .spacer {
+    margin-top: 20px;
+  }
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Desktop */
 @media screen and (min-width: 800px) {
   .photo-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 55px 20px;
   }
   .pano {
  grid-column: 1 / span 4;
@@ -86,12 +57,17 @@
     grid-row: auto / span 2;
     grid-column: auto / span 2;
   }
+  .photo-gallery-equal {
+    grid-gap: 50px !important;
+  }
+  .spacer {
+    margin-top: 50px;
+  }
 }
 
 
 .photo-thumbnail {
   transition: 0.2s;/* add thigns here if you want the photo gallery to do something on hover.*/
-  object-fit: cover;
   width: 100%;
   height: 100%;
   -webkit-box-shadow: 0px 0px 41px -15px rgba(176,176,176,1);
@@ -122,10 +98,11 @@ max-width: 960px;
 
 .portrait-photo {
 max-height: 600px;
-width: auto;
+max-width: 400px;
+width: 100%;
 }
 
 .square-photo {
 max-width: 700px;
-height: auto;
+height: 100%;
 }
