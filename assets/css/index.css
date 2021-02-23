@@ -113,7 +113,7 @@ html, body {
   color: #0F5399;
 }
 .content {
-  max-width: 900px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -557,7 +557,7 @@ i.no-stroke {
   width: 240px;
 }
 .two {
-  width: 365px;
+  width: 450px;
   padding-left: 40px;
 }
 .three {
