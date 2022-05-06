@@ -1,0 +1,175 @@
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.grad-text {
+  background: linear-gradient(315deg, #1A7DD7 0%, #03275A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.photo-gallery {
+  display: grid;
+}
+
+
+#copyright:target {
+  -webkit-animation: target-fade 2s;
+  -moz-animation: target-fade 2s;
+  -o-animation: target-fade 2s;
+  animation: target-fade 2s;
+}
+
+/**
+ * Keyframe animation definition
+ *
+ * 1. Insert a color of your choice here
+ */
+@-webkit-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@-moz-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@-o-keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+@keyframes target-fade {
+  from {
+    background-color: rgba(242, 255, 0, 0.6);
+  }
+  /* [1] */
+  to {
+    background-color: transparent;
+  }
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 800px) {
+  .photo-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  .pano {
+   grid-column: auto / span 1;
+  }
+  .landscape {
+      grid-column: auto / span 1;
+  }
+  .square {
+    grid-row: auto / span 1;
+    grid-column: auto / span 1;
+  }
+  .portrait {
+      grid-row: auto / span 1;
+      grid-column: auto / span 1;
+  }
+  .spacer {
+    margin-top: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  .photo-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 55px 20px;
+  }
+  .pano {
+ grid-column: 1 / span 4;
+  }
+  .landscape {
+    grid-column: auto / span 2;
+  }
+  .square {
+    grid-row: auto / span 4;
+    grid-column: auto / span 4;
+  }
+  .portrait {
+    grid-row: auto / span 2;
+    grid-column: auto / span 2;
+  }
+  .photo-gallery-equal {
+    grid-gap: 50px !important;
+  }
+  .spacer {
+    margin-top: 50px;
+  }
+  .photo-thumbnail:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+  }
+}
+
+
+.photo-thumbnail {
+  transition: 0.2s;/* add thigns here if you want the photo gallery to do something on hover.*/
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 41px -15px rgba(176,176,176,1);
+  -moz-box-shadow: 0px 0px 41px -15px rgba(176,176,176,1);
+  box-shadow: 0px 0px 41px -15px rgba(176,176,176,1);
+}
+
+
+
+
+.portrait {
+    margin: auto;
+}
+.landscape {
+    max-width: 500px;
+    height: auto;
+}
+
+.photo-grid {
+margin: auto;
+}
+.pano-photo {
+max-width: 960px;
+}
+
+.portrait-photo {
+max-height: 600px;
+max-width: 400px;
+width: 100%;
+}
+
+.square-photo {
+max-width: 700px;
+height: 100%;
+}

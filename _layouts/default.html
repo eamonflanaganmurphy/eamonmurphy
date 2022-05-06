@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {% include meta.html %}
+      {% include css.html %}
+      {% include analytics.html %}
+
+      <!-- Leaflet -->
+      <link rel="stylesheet" href="{{ site.url }}/assets/css/leaflet.css" />
+      <script src="{{ site.url }}/assets/js/leaflet.js"></script>
+
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+
+    <!-- Animate On Scroll CDN-->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 900
+    });
+    </script>
+
+    <!-- Header Change Color-->
+    <script src="{{ site.url }}/assets/js/header.js"></script>
+
+    <!-- Open Maps -->
+    <script src="{{ site.url }}/assets/js/maps.js"></script>
+
+  </body>
+</html>
