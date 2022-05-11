@@ -11,7 +11,7 @@ In Vancouver, Canada, a particularly relevant case study on wholistic system syn
 An example of system synergies can be found in the high number of green roofs found within the community. These roofs serve several important functions. They allow residents to immerse themselves in nature providing mental health benefits (Rezaei, M., 2021), function as diffuse rainwater treatment and collection mediums (Berghage et at., 2009) allowing for non-potable water to be used for irrigation and toilets in the neighborhood (S.U.C.C.E.S.S. at The Village, 2018), cool the surrounding microclimate protecting against urban heat island effects (Elmira et al. 2021), provide building heating and cooling savings (Bevilacqua, 2021), allow food to be grown locally reducing the need for vegetables to be imported into the city providing transport emissions reductions (Magalhães de Oliveira et al., 2021), and support healthy biodiversity by supporting local insect populations (Williams et al., 2014).
 
 <div style=" display: flex; flex-direction: row;">
-<img src="{{ site.url }}/assets/images/photos/blog/garden.jpg" alt="Vancouver" style='width: 32.5%; margin-right: 10px;'>
+<img src="{{ site.url }}/assets/images/photos/blog/garden.JPG" alt="Vancouver" style='width: 32.5%; margin-right: 10px;'>
 <img src="{{ site.url }}/assets/images/photos/blog/veggies.jpg" alt="Vancouver" style='width: 32.5%; margin-right: 10px;'>
 <img src="{{ site.url }}/assets/images/photos/blog/bee.jpg" alt="Vancouver" style='width: 35%'>
 </div>
@@ -23,7 +23,7 @@ Beyond green roofs, the community also features other low impact development sol
 
 <div style=" display: flex; flex-direction: row;">
 <img src="{{ site.url }}/assets/images/photos/blog/hinge1.jpg" alt="Vancouver" style='width: 60%; margin-right: 10px;'>
-<img src="{{ site.url }}/assets/images/photos/blog/hinge2.jpg" alt="Vancouver" style='width: 40%'>
+<img src="{{ site.url }}/assets/images/photos/blog/hinge2.JPG" alt="Vancouver" style='width: 40%'>
 </div>
 
 Figure 2: Habitat Island and Wetland Outflow to the Ocean (Left), and Hinge Park Naturalized Wetland (Right) (Own Photos)
