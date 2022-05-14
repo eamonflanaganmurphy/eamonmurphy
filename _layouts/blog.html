@@ -10,9 +10,9 @@
     <!-- Content -->
     <div class="content" style="margin-top: 200px;">
 
-      <h1 class ="grad-text m-b-50">Blog Posts</h1>
+      <h1 class ="grad-text m-b-50 fadeInUp">Blog Posts</h1>
 
-      <ul style="list-style: none">
+      <ul style="list-style: none" data-aos="fade-zoom-in">
         {% for post in site.posts %}
           <li class="m-t-b-20">
             <h3><a class="color no-underline" href="{{ post.url }}">{{ post.title }}</a></h3>
